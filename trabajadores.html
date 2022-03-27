@@ -8,15 +8,23 @@
     <script src="js\main.js"></script>
     <title>Trabajadores</title>
 </head>
-<body onload="mostrarTrabajadores()">
+<body">
     <div class="container d-flex justify-content-center">
         <h1>Trabajadores</h1>
     </div>
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="p-4">Ingreso producto</h1>
+                <h2 class="p-4">Ingreso Trabajador</h1>
                 <form action="http://127.0.0.1:5000/trabajadores" method="post">
+                    <div class="mb-3">
+                      <label for="input4" class="form-label">Rut</label>
+                      <input name="rut" type="text" class="form-control" id="input4" placeholder="204556781"></input>
+                    </div>
+                    <div class="mb-3">
+                      <label for="input4" class="form-label">Email</label>
+                      <input name="email" type="text" class="form-control" id="input5" placeholder=""></input>
+                    </div>
                     <div class="mb-3">
                         <label for="input1" class="form-label">Nombres</label>
                         <input name="nombres" type="text" class="form-control" id="input1">
@@ -29,10 +37,7 @@
                         <label for="input3" class="form-label">Apellido Materno</label>
                         <input name="apellido_materno" type="text" class="form-control" id="input3"></input>
                     </div>
-                    <div class="mb-3">
-                        <label for="input4" class="form-label">Rut</label>
-                        <input name="rut" type="text" class="form-control" id="input4" placeholder="20455678-1"></input>
-                    </div>
+                    
                 
                     <button type="submit" class="btn btn-primary">Agregar</button>
                 </form>
@@ -43,10 +48,12 @@
                     <thead class="thead-dark">
                       <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Rut</th>
+                        <th scope="col">Email</th>
                         <th scope="col">Nombres</th>
                         <th scope="col">Apellido Paterno</th>
                         <th scope="col">Apellido Materno</th>
-                        <th scope="col">Rut</th>
+                        
                       </tr>
                     </thead>
                     <tbody>
