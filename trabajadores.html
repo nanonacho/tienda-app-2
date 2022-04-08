@@ -8,7 +8,7 @@
     <script src="js\main.js"></script>
     <title>Trabajadores</title>
 </head>
-<body">
+<body onload="mostrarTrabajadores()">
     <div class="container d-flex justify-content-center">
         <h1>Trabajadores</h1>
     </div>
@@ -49,32 +49,12 @@
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Rut</th>
+                        <th scope="col">Nombre</th>
                         <th scope="col">Email</th>
-                        <th scope="col">Nombres</th>
-                        <th scope="col">Apellido Paterno</th>
-                        <th scope="col">Apellido Materno</th>
-                        
+                        <th scope="col">Fecha Registro</th>
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
+                    <tbody id="trabajadores">
                     </tbody>
                   </table>
             </div>
